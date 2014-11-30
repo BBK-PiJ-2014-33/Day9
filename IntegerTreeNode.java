@@ -147,21 +147,21 @@ public IntegerTreeNode (int myValue)
 
         if (left == null)
         {
-            myStringRepresentation = myStringRepresentation + " L" + "[" + "]";
+            //myStringRepresentation = myStringRepresentation + " L" + "[" + "]";
         }
         else
         {
-            myStringRepresentation = myStringRepresentation + " L";
+            //myStringRepresentation = myStringRepresentation + " L";
             myStringRepresentation = myStringRepresentation + left.toString();
         }
 
         if (right == null)
         {
-            myStringRepresentation = myStringRepresentation + " R" + "[" + "]";
+            //myStringRepresentation = myStringRepresentation + " R" + "[" + "]";
         }
         else
         {
-            myStringRepresentation = myStringRepresentation + " R";
+            //myStringRepresentation = myStringRepresentation + " R";
             myStringRepresentation = myStringRepresentation + right.toString();
         }
         myStringRepresentation = myStringRepresentation + "]";
