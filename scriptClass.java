@@ -37,5 +37,7 @@ public class scriptClass {
         //Test toString() method
         System.out.println(myIntegerTreeNode1.toString());
 
+        //Test Depth() method
+        System.out.println(myIntegerTreeNode1.depth());
     }
 }

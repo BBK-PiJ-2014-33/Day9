@@ -168,4 +168,48 @@ public IntegerTreeNode (int myValue)
 
         return myStringRepresentation;
     }
+
+    public int depth()
+    {
+        int myLeftDepth=0;
+        int myRightDepth=0;
+        if (left == null)
+        {
+           if (right == null)
+           {
+               //do nothing
+           }
+            else
+           {
+               myRightDepth=myRightDepth + right.depth()+1;
+           }
+        }
+        else if (right == null)
+        {
+            if (left == null)
+            {
+                //do nothing
+            }
+            else
+            {
+                myLeftDepth=myLeftDepth + left.depth()+1;
+            }
+        }
+
+        else
+        {
+            myRightDepth=myRightDepth + right.depth()+1;
+            myLeftDepth = myLeftDepth + left.depth()+1;
+        }
+
+        if(myLeftDepth>=myRightDepth)
+        {
+            return myLeftDepth;
+        }
+        else
+        {
+            return myRightDepth;
+        }
+    }
 }
+
